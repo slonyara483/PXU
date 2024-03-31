@@ -20,7 +20,7 @@ Official  repository of [pixuniverse.fun](https://www.pixuniverse.fun).
 Checkout repository
 
 ```
-git clone https://git.pixelplanet.fun/ppfun/pixelplanet.git
+git clone https://github.com/Messilegoat911/pixuniverse.git
 cd pixuniverse
 ```
 
