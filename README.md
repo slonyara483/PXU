@@ -51,9 +51,9 @@ Configuration takes place in the environment variables that are defined in ecosy
 | HOST           | Own Host                 | "localhost"             |
 | REDIS_URL      | URL:PORT of redis server | "redis://localhost:6379"|
 | MYSQL_HOST     | MySql Host               | "localhost"             |
-| MYSQL_USER     | MySql User               | "pixelplanet"           |
+| MYSQL_USER     | MySql User               | "username"              |
 | MYSQL_PW       | MySql Password           | "sqlpassword"           |
-| MYSQL_DATABASE | MySql Database           | "pixelplanet"           |
+| MYSQL_DATABASE | MySql Database           | "databasename"          |
 
 #### Optional Configuration
 
@@ -76,19 +76,19 @@ Configuration takes place in the environment variables that are defined in ecosy
 
 #### Social Media Configuration
 
-| Variable              | Description              |
-|-----------------------|:-------------------------|
-| GUILDED_INVITE        | Invite to guilded server |
-| DISCORD_CLIENT_ID     | All                      |
-| DISCORD_CLIENT_SECRET | those                    |
-| GOOGLE_CLIENT_ID      | values                   |
-| GOOGLE_CLIENT_SECRET  | are                      |
-| FACEBOOK_APP_ID       | for                      |
-| FACEBOOK_APP_SECRET   | login                    |
-| VK_CLIENT_ID          | with                     |
-| VK_CLIENT_SECRET      | Social                   |
-| REDDIT_CLIENT_ID      | Media                    |
-| REDDIT_CLIENT_SECRET  | Accounts                 |
+| Variable              | Description                      |
+|-----------------------|----------------------------------|
+| GUILDED_INVITE        | Invite to guilded/discord server |
+| DISCORD_CLIENT_ID     | All                              |
+| DISCORD_CLIENT_SECRET | those                            |
+| GOOGLE_CLIENT_ID      | values                           |
+| GOOGLE_CLIENT_SECRET  | are                              |
+| FACEBOOK_APP_ID       | for                              |
+| FACEBOOK_APP_SECRET   | login                            |
+| VK_CLIENT_ID          | with                             |
+| VK_CLIENT_SECRET      | Social                           |
+| REDDIT_CLIENT_ID      | Media                            |
+| REDDIT_CLIENT_SECRET  | Accounts                         |
 
 Notes:
 
