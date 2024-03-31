@@ -3,7 +3,7 @@
 
 [![Guilded](https://img.shields.io/badge/Discord-Support-blue.svg)](https://pixelplanet.fun/guilded)
 
-Official  repository of [pixelplanet.fun](http://www.pixelplanet.fun).
+Official  repository of [pixuniverse.fun](https://www.pixuniverse.fun).
 
 ![videothumb](promotion/videothumb.gif)
 
