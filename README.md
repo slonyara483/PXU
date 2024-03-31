@@ -1,4 +1,4 @@
-# PixelPlanet.fun
+# PixUniverse.fun
 
 
 [![Discord](https://img.shields.io/badge/Discord-Support-blue.svg)](https://pixuniverse.fun/guilded)
@@ -21,7 +21,7 @@ Checkout repository
 
 ```
 git clone https://git.pixelplanet.fun/ppfun/pixelplanet.git
-cd pixelplanet
+cd pixuniverse
 ```
 
 Install packages and build
@@ -72,7 +72,7 @@ Configuration takes place in the environment variables that are defined in ecosy
 | BACKUP_DIR        | mounted directory of backup server    | "/mnt/backup/"            |
 | HOURLY_EVENT      | run hourly void event on main canvas  | 1                         |
 | USE_MAILER        | enable to use mail sevicse            | 0                         |
-| MAIL_ADDRESS      | email address for sending mails       | "noreply@pixelplanet.fun" |
+| MAIL_ADDRESS      | email address for sending mails       | "noreply@pixuniverse.fun" |
 
 #### Social Media Configuration
 
@@ -154,8 +154,20 @@ npm install -g pm2
 ### Running
 
 1. Make sure that mysql and redis are running
-3. Start with 
-
+```
+sudo systemctl status redis
+sudo systemctl status mysql
+```
+if status is not active
+```
+sudo systemctl start redis
+sudo systemctl start mysql
+```
+3. And then
+```
+cd dist
+``` 
+3. And then
 ```
 pm2 start ecosystem.yml
 ```
@@ -197,7 +209,7 @@ And then setup pm2 startup with:
 pm2 startup
 ```
 
-(execute as the user that is running pixelplanet)
+(execute as the user that is running pixuniverse)
 And follow the printed steps if needed. This will generate a systemctl service file `/etc/systemd/system/pm2-pixelplanet.service` and enable it. You will have to run `pm2 save` while the canvas is running to let pm2 know what to start.
 To make sure that mysql and redis are up when pixelplanet starts, edit this service file and modify the lines:
 
@@ -261,7 +273,10 @@ The language definitions in `i18n/template.pot` and `i18n/template-ssr.pot` get 
 To build only specific languages, you can define them with the `--langs` flag:
 
 ```
-npm run build -- --langs de,gr
+npm run build -- --langs en
 ```
 
 You can use `npm run babel-node ./utils/script.js` to execute a script with local babel (path always relative to the root directory).
+
+If you face any issue you can dm me on discord messilegoat911
+or email me messi@pixuniverse.fun
