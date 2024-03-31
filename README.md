@@ -11,18 +11,6 @@ Official  repository of [pixuniverse.fun](https://www.pixuniverse.fun).
 
 [![Translation status](https://hosted.weblate.org/widget/pixelplanet/svg-badge.svg)](https://hosted.weblate.org/engage/pixelplanet/)
 
-To the 2nd anniversary of r/space, pixelplanet takes pixelgames to a new level. Place pixels, create pixelart and fight faction wars on pixelplanet.fun.
-Pixelplanet is a 65k x 65k large canvas that is a map of the world and can also be seen as 3d globe, you can place pixels where ever you want, build an island, take over another country with a flag or just create pixelart.
-30 well chosen colors (decided by polls within the community) are available and you can place a pixel every 3s on an empty space, and 5s on an already set pixel. But pixels can be stacked up to a minute, so you don't have to wait every time.
-
-Pixelplanet receives regular updates and launches events, like a zero second cooldown day on r/place anniversary. We are driven by our community, because placing pixels is more fun together.
-
-Controls:
-W, A, S, D, click and drag or pan: Move
-Q, E or scroll or pinch: Zoom
-Click or tab: Place Pixel
-![screenshot](promotion/screenshot.png)
-
 
 ## Build
 ### Requirements
