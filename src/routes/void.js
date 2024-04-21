@@ -9,10 +9,24 @@ export default (req, res) => {
     'Cache-Control': `public, max-age=${5 * 60}`,
   });
 
-  if (rpgEvent.eventTimestamp) {
-    const time = new Date(rpgEvent.eventTimestamp);
-    res.send(`Next void at ${time.toUTCString()}`);
-  } else {
-    res.send('No void');
+    if (rpgEvent.eventTimestamp) {
+      const currentTime = new Date();
+      const eventTime = new Date(rpgEvent.eventTimestamp);
+      const timeDifference = Math.max(0, eventTime - currentTime);
+    
+      if (timeDifference === 0) {
+        res.send('Void has either won or hasn\'t been announced yet');
+      } else {
+        const hours = Math.floor(timeDifference / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    
+        const timeUntilEvent = `${hours} hours, ${minutes} minutes, ${seconds} seconds`;
+    
+        res.send(`Time until next void: ${timeUntilEvent}`);
+      }
+    } else {
+      res.send('No void');
+    }
+    
   }
-};
