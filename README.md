@@ -1,4 +1,4 @@
-# PixUniverse.fun
+# Pixslonyara
 
 
 [![Discord](https://img.shields.io/badge/Discord-Support-blue.svg)](https://pixuniverse.fun/guilded)
